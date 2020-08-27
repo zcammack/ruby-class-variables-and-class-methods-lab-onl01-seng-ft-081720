@@ -1,6 +1,6 @@
 class Song
 
-attr_accessor name: artist: genre:
+attr_accessor name:, artist:, genre:
 
 @@number_of_songs = 0
 
