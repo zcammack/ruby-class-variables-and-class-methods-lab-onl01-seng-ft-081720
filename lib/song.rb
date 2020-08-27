@@ -1,5 +1,3 @@
-require 'fruity'
-
 class Song
 
   attr_accessor :name, :artist, :genre
@@ -30,7 +28,9 @@ class Song
   end
 
   def self.genre_count
-    @@genre.tally
+    @@genre.inject(genre_hash.new(0)) do |hash, a|
+      hash[a] += 1
+      hash
   end
 
 end
