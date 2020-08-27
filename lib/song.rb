@@ -31,6 +31,7 @@ class Song
     @@genre.inject(genre_hash.new(0)) do |hash, a|
       hash[a] += 1
       hash
+    end
   end
 
 end
